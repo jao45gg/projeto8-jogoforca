@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Jogo from "./components/Jogo";
+import Letras from "./components/Letras";
+import palavras from "./palavras";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default function App() {
+    return (
+        <>
+            <Jogo forca="assets/forca0.png" text="_ _ _ _ _ _ _ _ _ _" />
+            <Letras state={true}/>
+        </>
+    );
 }
-
-export default App;
