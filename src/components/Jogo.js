@@ -28,10 +28,10 @@ export default function Jogo(props) {
 
     return (
         <div className="flex">
-            <img src={props.forca} alt="forca" />
+            <img src={props.forca} alt="forca" data-test="game-image"/>
             <div className="flex-coluna">
-                <button className="palavra" onClick={handleClick}>Escolher Palavra</button>
-                <h1 className={handleClass()}>{props.textDisplay.map((t) => t+`${" "}`)}</h1>
+                <button className="palavra" onClick={handleClick} data-test="choose-word">Escolher Palavra</button>
+                <h1 className={handleClass()} data-test="word">{props.textDisplay.map((t) => t+`${" "}`)}</h1>
             </div>
         </div>
     );

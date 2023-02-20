@@ -22,7 +22,7 @@ button {
 }
 
 img {
-    width: 35.5vw;
+    width: 32vw;
     height: auto;
 }
 
@@ -37,7 +37,6 @@ img {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 50px;
 }
 
 h1 {

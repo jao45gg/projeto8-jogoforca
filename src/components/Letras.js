@@ -12,7 +12,7 @@ export default function Letras(props) {
             <div className="botoes">
                 {alfabeto.map((a) =>
                     <button key={a} className="letras" disabled={props.state ? props.state : props.botoes.includes(a)} 
-                    onClick={() => handleClick(a)}>{a.toUpperCase()}</button>
+                    onClick={() => handleClick(a) } data-test="letter">{a.toUpperCase()}</button>
                 )}
             </div>
         </div>
