@@ -8,6 +8,6 @@ import img6 from '../src/assets/forca6.png';
 
 const imgs = [
     img0, img1, img2, img3, img4, img5, img6
-]
+];
 
 export default imgs;

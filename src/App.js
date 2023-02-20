@@ -1,10 +1,10 @@
 import Jogo from "./components/Jogo";
 import Letras from "./components/Letras";
-import "./css/reset.css"
-import "./css/styles.css"
+import "./css/reset.css";
+import "./css/styles.css";
 import { useState } from "react";
 import palavras from "./palavras.js";
-import imgs from './images.js'
+import imgs from './images.js';
 
 export default function App() {
 
@@ -74,8 +74,7 @@ export default function App() {
             }
             setTextDisplay(str);
             setContadorPalavra(contadorPalavra - counter);
-        }
-        else {
+        } else {
             const num = erros + 1;
             setErros(num);
         }
@@ -92,7 +91,7 @@ export default function App() {
 
     if (stateJogo && control) {
         comecarJogo();
-    };
+    }
 
     if (letraClicada) {
         verificarLetra();

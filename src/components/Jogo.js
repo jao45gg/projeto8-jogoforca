@@ -7,8 +7,7 @@ export default function Jogo(props) {
     function handleClass() {
         if (props.result === true) {
             return "verde";
-        }
-        else if (props.result === false) {
+        } else if (props.result === false) {
             return "vermelho";
         }
         return "";
@@ -20,8 +19,7 @@ export default function Jogo(props) {
         
         if(num === 1) {
             props.setStateJogo(true);
-        }
-        else {
+        }  else {
             props.reiniciarJogo();
         }
     }
