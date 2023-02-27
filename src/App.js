@@ -84,8 +84,7 @@ export default function App() {
 
     if (contadorPalavra === 0) {
         ganhou();
-    }
-    else if (erros === 6 && control1) {
+    } else if (erros === 6 && control1) {
         perdeu();
     }
 
